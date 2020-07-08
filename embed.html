@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Cluster Gr(3,6)</title>
+<meta name="keywords" content="Lara Bossinger, Lara Boßinger, Math, lara, UNAM, Oaxaca">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+ 
+<div id="header">	
+  <h3>Grassmannians and universal coefficients for cluster algebras</h3>
+</div>
+
+
+<div id="nav">
+<br>
+<a href="index.html">Home</a><br>
+<a href="embed.html">Embedding</a><br>
+<a href="cone.html">The cone C</a><br>
+<a href="toric.html">Toric ideals</a><br>
+<a href="family.html">Flat family</a><br>
+<a href="universal.html">A<sub>3,6</sub><sup>univ</sup></a><br>
+<br>
+</div>
+    
+  
+<div id="aside">
+	<p>
+	Instituto de Matem&aacute;ticas UNAM Unidad Oaxaca <br>
+    Le&oacute;n 2, altos, Oaxaca de Ju&aacute;rez<br>
+    Centro Hist&oacute;rico<br>
+    68000 Oaxaca, Mexico.<br>
+    <br>
+    Office: sede Martires de Tacubaya 505a<br>
+  	Email: lara (at) im.unam.mx<br>
+	</p>
+</div>
+  
+<div id="section">
+<h3>The cluster embedding of the Grassmannian Gr(3,6)</h3>
+
+Consider the homogeneous coordinate ring A<sub>3,6</sub> of the Grassmannain Gr(3,6) with respect to its Pl&uuml;cker embedding.
+A description readable by Macaulay2 can be found here: <a href="A36.txt">A<sub>3,6</sub></a>.
+It is a cluster algebra of finite cluster type D<sub>4</sub> with six frozen directions.
+This cluster algebra has 22 cluster variables:<br>
+<br>
+p<sub>123</sub>, p<sub>124</sub>, p<sub>125</sub>, p<sub>126</sub>, p<sub>134</sub>, p<sub>135</sub>, p<sub>136</sub>, p<sub>145</sub>, p<sub>146</sub>, p<sub>156</sub>,
+ p<sub>234</sub>, p<sub>235</sub>, p<sub>236</sub>, p<sub>245</sub>, p<sub>246</sub>, p<sub>256</sub>, p<sub>345</sub>, p<sub>346</sub>, p<sub>356</sub>, p<sub>456</sub>, X, Y.
+<br>
+<br>
+The cluster variables of form p<sub>ijk</sub> are the usual Pl&uuml;cker coordinates and the six frozen variables correspond to Pl&uuml;cker coordinates whose indexing sets are (cyclic) intervals:  <br>
+<br>
+p<sub>123</sub>, p<sub>234</sub>, p<sub>345</sub>, p<sub>456</sub>, p<sub>156</sub>, p<sub>126</sub>.
+<br>
+<br>
+The additional two cluster variabels X and Y can be expressed as homogeneous binomials of degree two in the Pl&uuml;cker coordinates:<br>
+<br>
+ X = p<sub>145</sub>p<sub>246</sub> - p<sub>123</sub>p<sub>456</sub>, and  Y = p<sub>125</sub>p<sub>346</sub> - p<sub>126</sub>p<sub>345</sub>.
+<br>
+<br>
+We define a map from the polynomial ring in cluster variables &#x2102;[p<sub>123</sub>,..., p<sub>456</sub>, X, Y] to A<sub>3,6</sub> sending each variables to its corresponding coset in A<sub>3,6</sub>.
+The map is surjective and we denote its kernel by I<sup>ex</sup>. The ideal in Macaulay2 friendly form is here: <a href="Iex.txt">I<sup>ex</sup></a>.
+Eliminating the variables X and Y from I<sup>ex</sup> gives back the the Pl&uuml;cker ideal defining Gr(3,6) (see the file <a href="A36.txt">A<sub>3,6</sub></a>).
+The quotient of &#x2102;[p<sub>123</sub>,..., p<sub>456</sub>, X, Y] by I<sup>ex</sup> (we denote it by A from now on) is isomorphic to A<sub>3,6</sub>.
+Moreover, this is an isomorphism of graded algeberas: A has the non-standard grading where the Pl&uuml;cker coordinates are of degree 1 and the variables X and Y of degree 2.
+The vanishing set V(I<sup>ex</sup>) is a weighted projective variety inside the weighted projective space &#x2119;(d) where <br>
+<br>
+d=(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2)<br>
+<br>
+As weighted projective variety V(I<sup>ex</sup>) and Gr(3,6) are isomorphic. We therefore call V(I<sup>ex</sup>) the <em>cluster embedding of Gr(3,6)</em>.
+In fact, the ideal I<sup>ex</sup> contains all 52 exchange relations of the cluster algebra A<sub>3,6</sub>, you can find them here: <a href="exchange.txt">exchange relations</a>. 
+The first monomial of each 3-term exchange relation (as they are written in the file) is what we call the <em>exchange monomial</em>. 
+The other two terms are cluster monomials.
+However, the exchange relations do not generate the ideal I<sup>ex</sup>, as can be seen from comparing the minimal generating set given in <a href="Iex.txt">I<sup>ex</sup></a> to the <a href="exchange.txt">exchange relations</a>.
+</div>	
+
+
+<div id="footer">
+<br>
+<br>
+<br>
+<br>
+Links: <a href="https://faculty.math.illinois.edu/Macaulay2/">Macaulay2</a>, <a href="https://webusers.imj-prg.fr/~bernhard.keller/quivermutation/">Quiver Mutation App</a>,  <a href="https://polymake.org/doku.php">polymake</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Cluster Gr(3,6)</title>
+<meta name="keywords" content="Lara Bossinger, Lara Boßinger, Math, lara, UNAM, Oaxaca">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+ 
+<div id="header">	
+  <h3>Grassmannians and universal coefficients for cluster algebras</h3>
+</div>
+
+
+<div id="nav">
+<br>
+<a href="index.html">Home</a><br>
+<a href="embed.html">Embedding</a><br>
+<a href="cone.html">The cone C</a><br>
+<a href="toric.html">Toric ideals</a><br>
+<a href="family.html">Flat family</a><br>
+<a href="universal.html">A<sub>3,6</sub><sup>univ</sup></a><br>
+<br>
+</div>
+    
+  
+<div id="aside">
+	<p>
+	Instituto de Matem&aacute;ticas UNAM Unidad Oaxaca <br>
+    Le&oacute;n 2, altos, Oaxaca de Ju&aacute;rez<br>
+    Centro Hist&oacute;rico<br>
+    68000 Oaxaca, Mexico.<br>
+    <br>
+    Office: sede Martires de Tacubaya 505a<br>
+  	Email: lara (at) im.unam.mx<br>
+	</p>
+</div>
+  
+<div id="section">
+<h3>Universal coefficients for A<sub>3,6</sub></h3>
+
+The main result regarding the Grassmannian Gr(3,6) in our paper is that the quotient of 
+&#x2102;[t<sub>1</sub>,...,t<sub>16</sub>][p<sub>123</sub>,...,p<sub>456</sub>,X,Y] by the lifted ideal I<sub><b>r</b></sub><sup>ex</sup> 
+is isomorphic to the cluster algebra A<sub>3,6</sub> endowed with <em>universal coefficients</em>, called A<sub>3,6</sub><sup>univ</sup>.<br>
+<br>
+We therefore proceed by explaining how to describe A<sub>3,6</sub><sup>univ</sup> using the <a href="https://webusers.imj-prg.fr/~bernhard.keller/quivermutation/">Quiver Mutation App</a>.
+A<sub>3,6</sub><sup>univ</sup>, just as A<sub>3,6</sub>, is a cluster algebra of cluster type D<sub>4</sub> with the same 22 (mutable and frozen) cluster variables:<br>
+<br>
+p<sub>123</sub>, p<sub>124</sub>, p<sub>125</sub>, p<sub>126</sub>, p<sub>134</sub>, p<sub>135</sub>, p<sub>136</sub>, p<sub>145</sub>, p<sub>146</sub>, p<sub>156</sub>,
+ p<sub>234</sub>, p<sub>235</sub>, p<sub>236</sub>, p<sub>245</sub>, p<sub>246</sub>, p<sub>256</sub>, p<sub>345</sub>, p<sub>346</sub>, p<sub>356</sub>, p<sub>456</sub>, X, Y.
+<br>
+<br>
+Additionally, A<sub>3,6</sub><sup>univ</sup> has <em>coefficients</em>: one for every <em>mutable</em> cluster variable (so 16 in total).
+For computations all we need is an initial seed for A<sub>3,6</sub><sup>univ</sup> and we obtain in using Reading's description of universal coefficients. 
+(This is equivalent to Fomin&ndash;Zelevinsky's original definition, but more handy for computations; see Reading's paper "Universal geometric cluster algebras" Math. Z. 277 (2014), no. 1-2, 499&ndash;547)
+We start by choosing an initial quiver Q for A<sub>3,6</sub>:
+<br>
+<img src="Q.jpg" alt="Image" 	max-width="10%" height="auto"> 
+<br>
+Then, we compute the g-vectors for all mutable cluster variables with respect to the opposite seed. 
+Every g-vector now corresponds to one coefficient and as we are in geometric type we can realize the coefficients as frozen directions.
+The outcome is the quiver Q with 16 additional frozen vertices whose arrows are indicated by the g-vectors.
+You can download the quiver here: <a href="Quniv.qmu" download>Q<sup>univ</sup></a>.
+Note that this is in .qmu-format which can be opened directly in the <a href="https://webusers.imj-prg.fr/~bernhard.keller/quivermutation/">Quiver Mutation App</a>.
+The frozen variables numbered 1,...,16 correspond to the coefficients. 
+Using the x-variables function of the <a href="https://webusers.imj-prg.fr/~bernhard.keller/quivermutation/">Quiver Mutation App</a> 
+one can now recursively verify that the exchange relations of A<sub>3,6</sub><sup>univ</sup> coincide with the lifts of exchange relations in A<sub>3,6</sub> (see <a href="family.txt">lifted relations</a>).
+The labelling of the coefficients is aligned with the labelling of the rays <a href="toric.html">here</a>.
+</div>
+
+<div id="footer">
+<br>
+<br>
+<br>
+<br>
+Links: <a href="https://faculty.math.illinois.edu/Macaulay2/">Macaulay2</a>, <a href="https://webusers.imj-prg.fr/~bernhard.keller/quivermutation/">Quiver Mutation App</a>, <a href="https://polymake.org/doku.php">polymake</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
