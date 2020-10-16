@@ -11,7 +11,7 @@ the flat family associated to the maximal cone, and a description of the cluster
 
     "Families of Gröbner degenerations, Grassmannians and universal cluster algebras"
     by L. Bossinger, F. Mohammadi, and A. Nájera Chávez
-    arXiv:20xx.xxxxx
+    arXiv:2007.14972
 
 
 For the computations we used the computer program Macaulay2, B. Keller's Quiver Mutation App, and polymake.
